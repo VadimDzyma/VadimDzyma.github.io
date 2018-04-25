@@ -2,67 +2,88 @@
 <html>
 <head>
 	<style type="text/css">
-	.FirstBlock {color: white;
+	.firstblock {
+		color: white;
 		font-size: 45px;
-	background-color: darkblue;
 
-	width: 50%;
-	height: 100px;
+	background-color: darkblue;
 	text-align: center;
-	padding-top: 2%;
+	padding-top: 20px;
 	border-top: 5px solid red;
 	border-left: 5px solid red;
 	border-right: 5px solid red;
+	border-bottom: 5px solid red;
+	margin: 30px 500px;
+
+	
 	
 	}
 		.VerticalBlock {color: white;
-		background: linear-gradient(to top, #e2e2e2 0%,#dbdbdb 20%, blue 100%);
-		border-left: 5px solid red;
-		border-bottom: 5px solid red;
-		width: 15%;
-		height: 85vh;
+		background: linear-gradient(to top, #e3e3e3 0%,#dbdbdb 20%, blue 100%);
+		
+		
+		width: 25%;
+		margin-top: 5%;
+		/*
+		height: 85vh;*/
 		}
 		.Photo{
 		width:140px;
 		height: 140px;
 		border-radius: 20px;
 
-		margin-left: 25%;
+		
 		margin-top: 20%;
 
 		}
 		.text{border-bottom: 3px solid yellow;
-			font-size: 50px;
+			font-size: 38px;
 			position: center;
 			margin: 35px;
-			padding-top: 20%;
+			padding-top: 10%;
 		}
-			.text2{font-size: 25px;
-			margin: 100px;
+			.text2{font-size: 30px;
+			margin: 70px;
 			}
 
 			.food1{background-color: orange;
 				text-align: center;
-				width: 65%;
+				width: 80%;
+				font-size: 20px;
 				margin: 30px;
 			border-radius: 20px;
+
 			}
 
 			.food2{background-color: brown;
 				text-align: center;
+				font-size: 20px;
 				width: 50%;
 				margin: 30px;
 			border-radius: 20px;
 		}
 			.food3{background-color: lightgreen;
 				text-align: center;
+				font-size: 20px;
 				margin: 30px;
 			border-radius: 20px;
 		}
 		
 
-		.ContactsList{color: darkblue; font-size: 15px;
+		.ContactsList{color: darkblue; font-size: 25px;
 
+
+		}
+		#contacts{font-size: 30px;}
+
+
+		#bokovoy{float: left; color: blue;
+			position: relative;
+			
+			left: 50px;
+
+			background-color: red;
+				
 		}
 
 		
@@ -71,27 +92,35 @@
 </head>
 <body>
 
-<div class="FirstBlock">ГЛАЗАСТЫЙ ПЕС</div>
-<div class="VerticalBlock">
+<div class="firstblock">ГЛАЗАСТЫЙ ПЕС
+	<div class="VerticalBlock">
 	<img src='puppy2.jpg' alt='Photo'  class='Photo' border="5"/>
 	<h1 class="text"> Мопсовий Мопсович</h1>
 	<u class="text2">Люблю:</u>
 
-<div class="food1">Сметанку</div>
-<div class="food2">Молочко</div>
-<div class="food3">Пивасик</div>
+		<div class="food1">Сметанку</div>
+		<div class="food2">Молочко</div>
+		<div class="food3">Пивасик</div>
 
-	<u>Контакты</u>
-		<ul class="ContactsList"> 
-			<li><a href="https://www.facebook.com">facebook</a>
-			<li><a href="https://www.google.com.ua/maps?hl=ru&tab=wl">location</a>
-			<li><a href="https://twitter.com/?lang=ru">Twitter</a>
-			</li>
-			</li>
-			</li>
-		</ul>
+			<u id="contacts">Контакты
+				<ul class="ContactsList"> 
+					<li><a href="https://www.facebook.com">Facebook</a></li>
+					<li><a href="https://www.google.com.ua/maps?hl=ru&tab=wl">Location</a></li>
+					<li><a href="https://twitter.com/?lang=ru">Twitter</a></li>
+				
+				</ul>
+			</u>
+	
+	</div>
+		<div id="bokovoy">
+			<b>Дата рождения</b>
+			<p>1 января 2017</p>
+			<b>Место рождения</b>
+			<p>Теплая печка</p>
+
+		</div>
+
 </div>
-		   			
 		   				 		
 
 </body>
